@@ -6,19 +6,19 @@ This image uses the rpi-mongo image to run a mongo database on the Raspberry Pi:
 https://hub.docker.com/r/dhermanns/rpi-mongo
 
 # Github Repo
-The image is created by using the Github Repository located here:
+The image is created by modifying the Github Repository located here:
 https://github.com/dhermanns/rpi-nightscout
 
 # Usage
 ## Install Hypriot OS on your Raspberry
 First of all, you need a Raspberry Pi 1 or 2. Install an operating system that supports
-the docker runtime. E.g. follow the instructions to install the nice hypriot os:
+the docker runtime. It is highly recommended that you use HypriotOS:
 http://blog.hypriot.com/getting-started-with-docker-on-your-arm-device/
 
 ## Install Docker-Compose
-Afterwards you should have a running Raspberry which is able to start Docker Container.
+Afterwards you should have a running Raspberry able to start Docker Containers.
 What we additionally need is the docker-compose component. Using this tool we are able to fire up
-all that is needed to start Nightscout plus Mongo with just two command lines.
+all that is needed to start Nightscout plus Mongo with just two commands.
 
 The steps needed to install docker-compose are documented here:
 http://blog.hypriot.com/post/docker-compose-nodejs-haproxy
@@ -28,7 +28,7 @@ The short story is - simply execute this command:
 $ sudo sh -c "curl -L https://github.com/hypriot/compose/releases/download/1.1.0-raspbian/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose; chmod +x /usr/local/bin/docker-compose"
 ```
 
-## Checkout this repository to your Raspberry Pi
+## Checkout this repository (or your own modified version) to your Raspberry Pi
 Clone this repository to your Raspberry. Execute
 ```
 git clone https://github.com/dhermanns/rpi-nightscout
